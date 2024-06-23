@@ -1,5 +1,9 @@
+// tailwind.config.js
+
+// Import type definition for Config from tailwindcss
 import type { Config } from "tailwindcss";
 
+// Define your Tailwind CSS configuration object
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +12,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        grid: "grid 15s linear infinite",
+      },
+      keyframes: {
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,4 +30,6 @@ const config: Config = {
   },
   plugins: [],
 };
+
+// Export the configuration object
 export default config;
