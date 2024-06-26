@@ -4,7 +4,7 @@ import About from './about/page';
 const HomePage = () => {
   return (
     <>
-    <div className="min-h-screen w-full p-24 md:p-24 lg:p-40 bg-gray-900 text-white flex flex-col justify-center items-start">
+    <div className="min-h-screen w-full px-24 lg:p-40 sm:w-full sm:h-full overflow-hidden bg-[#111111] text-white flex flex-col justify-center items-start">
       <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl">
         Hey, I'm Monu<span className="text-[#0AFF9D]">.</span>
       </h1>

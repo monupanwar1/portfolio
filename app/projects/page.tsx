@@ -1,29 +1,17 @@
-import Cards from "@/components/Cards";
-import Contact from "@/components/Contact";
+import Cards from "@/components/Cards"
+import Contact from "@/components/Contact"
 
-const project = () => {
+export const Projects = () => {
   return (
-    <>
-      <div className="min-h-screen w-full p-24 bg-[#111111]">
-        <div className="flex items-center justify-center">
-
-        <div className="h-[1px] w-full bg-white"></div>
-        <h1 className="text-white font-bold text-6xl p-4">
-          Projects<span className="text-[#0AFF9D] font-bold">.</span>
-        </h1>
+    <div className="bg-[#111111] p-24">
+       <div className="flex items-center justify-center gap-5 p-4">
+          <div className=" lg:block h-[1px] w-full bg-white"></div>
+          <h1 className="text-white font-bold text-6xl">
+            Projects<span className="text-[#0AFF9D] font-bold">.</span>
+          </h1>
         </div>
-
-       <div
-        className="text-white">
-        <Cards/>
-       </div>
-
-<div className="mt-10">
-
+      <Cards/>
       <Contact/>
-</div>
-      </div>
-    </>
-  );
-};
-export default project;
+    </div>
+  )
+}
