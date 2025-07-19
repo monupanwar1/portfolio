@@ -1,12 +1,9 @@
-import Contact from "@/components/Contact"
+import ContactSection from "@/components/ContactSection";
 
-const page = () => {
+export default function AboutPage() {
   return (
-    <div className="h-screen w-full p-24 items-cenetr justify-center bg-[#111111] overflow-hidden">
-        <Contact/>
-
-    </div>
-
-  )
+    <main className="bg-[#111111] min-h-screen w-full">
+      <ContactSection/>
+    </main>
+  );
 }
-export default page

@@ -1,34 +1,25 @@
 import { DotPattern } from '@/components/magicui/dot-pattern';
-import About from './about/page';
 
-export default function HomePage() {
+import AboutSection from '@/components/AboutSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import ContactSection from '@/components/ContactSection';
+import HomePage from '@/components/Homepage';
+
+export default function Page() {
   return (
     <>
-      <DotPattern
-        className="fixed top-0 left-0 w-full h-full -z-10"
-        width={20}
-        height={20}
-       glow={true}
-      />
-
-      <main className="relative z-10 min-h-screen w-full px-24 lg:p-40 flex flex-col justify-center items-start">
-        <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl">
-          Hey, I'm Monu<span className="text-[#0AFF9D]">.</span>
-        </h1>
-        <h6 className="mt-5 text-2xl md:text-4xl lg:text-5xl">
-          I'm a{' '}
-          <span className="text-[#0AFF9D] font-bold">Frontend Developer</span>
-        </h6>
-        <p className="mt-4 w-full md:w-3/4 lg:w-1/2">
-          I've spent the last 5 years building and scaling software for some
-          pretty cool companies. I also teach people to paint online (in case
-          you've got an empty canvas layin' around 🎨). Let's connect!
-        </p>
-        <button className="mt-5 text-black bg-[#0AFF9D] px-4 py-3 rounded-md hover:bg-[#08D88F] transition duration-300">
-          Contact me →
-        </button>
+      <HomePage />
+      <main className="relative z-10 min-h-screen overflow-hidden w-full px-16 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-col justify-center md:items-center">
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </main>
-      <About />
     </>
   );
 }

@@ -1,55 +1,93 @@
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+"use client"
+import { ProjectData } from '@/Types/types';
+import Link from 'next/link';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import { motion } from 'framer-motion';
 
-const Cards = () => {
+// Data Array for Projects
+const projectData: ProjectData[] = [
+  {
+    title: 'Paint APP',
+    tech: 'Flutter - MUI - Python - FastAPI',
+    description:
+      'A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.',
+    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/',
+  },
+  {
+    title: 'ChatBot APP',
+    tech: 'React - Node.js - OpenAI API',
+    description:
+      'An AI-powered chatbot app for instant communication and query resolution.',
+    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/',
+  },
+  {
+    title: 'Portfolio Website',
+    tech: 'Next.js - TailwindCSS - Framer Motion',
+    description:
+      'A sleek portfolio site to showcase my projects, built with modern tools.',
+    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/',
+  },
+  {
+    title: 'Food Delivery App',
+    tech: 'React Native - Firebase - Stripe API',
+    description:
+      'An end-to-end food delivery application with payment integration and real-time tracking.',
+    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/',
+  },
+];
+
+const Cards = ({ title, tech, description, linkedin, github }:ProjectData) => {
   return (
-    <div className="p-4 w-full sm:w-[480px]">
-      <div className="h-60 bg-[#232323] flex items-center justify-center">
+    <motion.div
+      initial={{ opacity: 0, x: -100 }} // Slide in from left
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: true }}
+      className="p-4 w-full sm:w-[480px]"
+    >
+      <section className="h-60 bg-[#232323] rounded-md flex items-center  justify-center ">
         <h1 className="text-white rounded-lg uppercase text-center p-20 hover:bg-[#0AFF9D] w-full">
-          Your Projects Here 😊
+          My All Projects 😊
         </h1>
-      </div>
+      </section>
       <div className="text-white font-bold text-2xl mt-4 flex items-center justify-between">
-        <h1>
-          Paint <br /> APP
-        </h1>
+        <h1 className="md:text-nowrap lg:text-nowrap">{title}</h1>
         <div className="flex-1 mx-4 h-[1px] bg-white"></div>
         <div className="flex items-center gap-4">
-          <a
-            href="https://www.linkedin.com/"
+          <Link
+            href={linkedin}
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#EBECF3] hover:text-[#0AFF9D] transition duration-300"
+            className="text-[#EBECF3] hover:text-[#0AFF9D] text-3xl"
           >
-            <IoLogoLinkedin className="text-3xl" />
-          </a>
-          <a
-            href="https://github.com/"
+            <IoLogoLinkedin />
+          </Link>
+          <Link
+            href={github}
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#EBECF3] hover:text-[#0AFF9D] transition duration-300"
+            className="text-[#EBECF3] hover:text-[#0AFF9D] text-3xl"
           >
-            <IoLogoGithub className="text-3xl" />
-          </a>
+            <IoLogoGithub />
+          </Link>
         </div>
       </div>
-      <h1 className="font-semibold text-1xl text-[#0AFF9D] mt-2 w-full">
-        Flutter - MUI - Python - FastAPI
-      </h1>
-      <h5 className="text-white mt-4 font-semibold text-1xl w-full">
-        A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.
-        <span className="text-[#0AFF9D]"> Read More &gt; </span>
+      <h1 className="font-semibold text-1xl text-[#0AFF9D] mt-2">{tech}</h1>
+      <h5 className="text-white mt-4 font-semibold text-1xl">
+        {description} <span className="text-[#0AFF9D]">Read More &gt;</span>
       </h5>
-    </div>
+    </motion.div>
   );
 };
 
 const CardsContainer = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <Cards />
-      <Cards />
-      <Cards />
-      <Cards />
+      {projectData.map((project, index) => (
+        <Cards key={index} {...project} />
+      ))}
     </div>
   );
 };
