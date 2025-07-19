@@ -3,7 +3,18 @@ import { FaSmile, FaTerminal } from 'react-icons/fa';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import { Projects } from '../projects/page';
 
-const About = () => {
+const workTools = [
+  'React',
+  'Node.js',
+  'Next.js',
+  'GitHub',
+  'Jira',
+  'Prisma',
+  'Tailwind',
+];
+const funTools = ['Shadcn', 'Figma', 'Firebase', 'PHP', 'Angular'];
+
+export default function About() {
   return (
     <>
       <section className="min-h-screen sm:w-full p-24 sm:p-20 md:p-24 lg:px-24 bg-[#111111]">
@@ -65,50 +76,37 @@ const About = () => {
             <div className="w-full">
               <div className="flex items-center mb-5">
                 <FaTerminal className="text-[#0AFF9D] mr-2 text-3xl" />
-                <h1 className="text-white font-bold text-3xl">Use at Work</h1>
+                <h1 className="text-white  text-nowrap font-bold text-3xl">
+                  Use at Work
+                </h1>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-white">
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  React
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  Node.js
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  Next.js
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  GitHub
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  Jira
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-lg text-center">
-                  Prisma
-                </h5>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 text-white">
+                {workTools.map((tool, index) => (
+                  <h5
+                    key={index}
+                    className="bg-[#232323] px-2 md:px-4 lg:px-6 py-2 rounded-lg text-center"
+                  >
+                    {tool}
+                  </h5>
+                ))}
               </div>
 
               <div className="flex items-center mt-10 mb-4">
                 <FaSmile className="text-[#0AFF9D] mr-2 text-3xl" />
-                <h1 className="text-white font-bold text-3xl">Use for Fun</h1>
+                <h1 className="text-white font-bold text-nowrap text-3xl">
+                  Use for Fun
+                </h1>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-white">
-                <h5 className="bg-[#232323] px-3 py-2 rounded-md text-center">
-                  Shadcn UI
-                </h5>
 
-                <h5 className="bg-[#232323] px-3 py-2 rounded-md text-center">
-                  Figma
-                </h5>
-                <h5 className="bg-[#232323] px-1 py-2 rounded-md text-center">
-                  Firebase
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-md text-center">
-                  PHP
-                </h5>
-                <h5 className="bg-[#232323] px-3 py-2 rounded-md text-center">
-                  Angular
-                </h5>
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 text-white">
+                {funTools.map((tool, index) => (
+                  <h5
+                    key={index}
+                    className="bg-[#232323] px-2 md:px-4 lg:px-6 py-2 rounded-md text-center text-nowrap"
+                  >
+                    {tool}
+                  </h5>
+                ))}
               </div>
             </div>
           </div>
@@ -119,6 +117,4 @@ const About = () => {
       <Projects />
     </>
   );
-};
-
-export default About;
+}

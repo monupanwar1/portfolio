@@ -15,11 +15,11 @@ export default function Navbar() {
     <>
       {/* Side Navbar */}
       <header className="fixed h-screen w-16 top-0 flex flex-col justify-between bg-[#080808] backdrop-blur-lg bg-opacity-50 ">
-        <div className="p-4 flex items-center justify-center">
+        <section className=" container p-4 flex items-center justify-center">
           <h1 className="font-bold text-3xl text-white hover:text-[#0AFF9D]">
             M<span className="text-[#0AFF9D]">.</span>
           </h1>
-        </div>
+        </section>
 
         <ul className="flex flex-col items-center gap-20 mb-20 text-white">
           {navItems.map(({ label, href }) => (
@@ -37,7 +37,7 @@ export default function Navbar() {
       </header>
 
       {/* Top Navbar */}
-      <div className="fixed left-16 w-[calc(100%-4rem)] flex justify-between items-center px-8 py-4 backdrop-blur-xl bg-black/20 z-10">
+      <section className="fixed left-16 w-[calc(100%-4rem)] flex justify-between items-center px-8 py-4 backdrop-blur-xl bg-black/20 z-10">
         <div className="flex items-center gap-4">
           <Link
             href="https://linkedin.com"
@@ -59,7 +59,7 @@ export default function Navbar() {
         >
           My Resume
         </a>
-      </div>
+      </section>
     </>
   );
 }
