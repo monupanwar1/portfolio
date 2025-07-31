@@ -1,4 +1,5 @@
 import { DotPattern } from '@/components/magicui/dot-pattern';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -27,9 +28,9 @@ export default function HomePage() {
         Let&apos;s connect!
       </p>
 
-      <button className="mt-5 text-black bg-[#0AFF9D] px-4 py-3 rounded-md hover:bg-[#08D88F] transition duration-300">
+      <Link href="#contact" className="mt-5 text-black bg-[#0AFF9D] px-4 py-3 rounded-md hover:bg-[#08D88F] transition duration-300">
         Contact me →
-      </button>
+      </Link>
     </section>
   );
 }
