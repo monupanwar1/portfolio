@@ -24,7 +24,7 @@ export default function ContactSection() {
           >
             Twitter
           </a>{' '}
-          if that's more your speed.
+          if that&apos;s more your speed.
         </h4>
         <div className="flex items-center justify-center text-lg sm:text-2xl md:text-2xl">
           <FaEnvelope className="mr-2" />

@@ -26,11 +26,12 @@ export default function AboutSection() {
       <div className="flex flex-col lg:flex-row items-start justify-center p-4">
         <div className="left w-full lg:w-1/2 text-white gap-4 px-4 py-8 flex flex-col">
           <p>
-            Hey! I'm Monu, a frontend developer who loves building interactive
-            websites using modern tools like React, Next.js, and Tailwind.
+            Hey! I&apos;m Monu, a frontend developer who loves building
+            interactive websites using modern tools like React, Next.js, and
+            Tailwind.
           </p>
           <p>
-            I'm currently focused on improving my UI skills and working on
+            I&apos;m currently focused on improving my UI skills and working on
             personal projects.
           </p>
           <p>
@@ -38,8 +39,8 @@ export default function AboutSection() {
             different frameworks.
           </p>
           <p>
-            I'm actively looking for frontend developer roles where I can apply
-            my skills and grow faster 🚀
+            I&apos;m actively looking for frontend developer roles where I
+            can apply my skills and grow faster 🚀
           </p>
 
           <div className="flex items-center justify-center gap-4 mt-8 lg:mt-0">
