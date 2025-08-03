@@ -23,12 +23,16 @@ export default function HomePage() {
         <span className="text-[#0AFF9D] font-bold">Frontend Developer</span>
       </h6>
       <p className="mt-4 w-full md:w-3/4 lg:w-1/2">
-        I have spent the last 5 years building and scaling software for some
-        pretty exciting companies. I also teach people how to paint online (🎨).
-        Let&apos;s connect!
+        I&aposm a passionate Frontend Developer skilled in React, Next.js,
+        TypeScript, and Prisma. I’ve been actively building projects that focus
+        on clean design, performance, and real-world problem solving.Excited to
+        connect, learn, and grow with amazing teams and projects!
       </p>
 
-      <Link href="#contact" className="mt-5 text-black bg-[#0AFF9D] px-4 py-3 rounded-md hover:bg-[#08D88F] transition duration-300">
+      <Link
+        href="#contact"
+        className="mt-5 text-black bg-[#0AFF9D] px-4 py-3 rounded-md hover:bg-[#08D88F] transition duration-300"
+      >
         Contact me →
       </Link>
     </section>
