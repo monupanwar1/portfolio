@@ -31,7 +31,7 @@ const projectData: ProjectProps[] = [
     title: 'Evento 🎶',
     tech: 'Next.js · Prisma · NeonDB · TypeScript',
     description:
-      'A DJ event management system where users can explore events happening in their nearby locations. Currently running with a local database setup.',
+      'A DJ event management system where users can explore events happening in their nearby locations. Currently, the database contains a limited number of locations, but it can be easily scaled to include more events across different areas..',
     image: '/Evento.png',
     url: 'https://evento-kappa-ten.vercel.app/',
     linkedin: 'https://www.linkedin.com/in/monu-panwar',
