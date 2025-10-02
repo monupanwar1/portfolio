@@ -18,11 +18,11 @@ const projectData: ProjectProps[] = [
     github: 'https://github.com/monupanwar1/postpilot.git',
   },
   {
-    title: 'PewSoft 🐾',
+    title: 'PawSoft 🐾',
     tech: 'Next.js · Clerk Auth · TypeScript · NeonDB',
     description:
       'A pet care management app that helps users organize and manage their pets with ease.',
-    image: '/pawsoft.png',
+    image: '/Pawsoft.png',
     url: 'https://pawsoft.vercel.app/',
     linkedin: 'https://www.linkedin.com/in/monu-panwar',
     github: 'https://github.com/monupanwar1/pawsoft.git',
@@ -43,7 +43,7 @@ const projectData: ProjectProps[] = [
     description:
       'A modern portfolio website showcasing all my projects and skills.',
     image: '/Portfolio.png',
-    url: '#',
+    url: 'https://portfolio-two-khaki-i4mpllovsb.vercel.app/',
     linkedin: 'https://www.linkedin.com/in/monu-panwar',
     github: 'https://github.com/monupanwar1/portfolio.git',
   },
