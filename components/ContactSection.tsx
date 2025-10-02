@@ -8,11 +8,11 @@ export default function ContactSection() {
           Contact<span className="text-[#0AFF9D]">.</span>
         </h1>
         <h4 className="text-base sm:text-lg md:text-xl mb-4">
-          Shoot me an email if you want to connect! You can
+          Feel free to reach out via email if you&apos;d like to connect!
           <br />
           also find me on{' '}
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/monu-panwar"
             className="text-[#0AFF9D]"
           >
             LinkedIn
@@ -27,8 +27,15 @@ export default function ContactSection() {
           if that&apos;s more your speed.
         </h4>
         <div className="flex items-center justify-center text-lg sm:text-2xl md:text-2xl">
-          <FaEnvelope className="mr-2" />
-          <span>monupanwar5655@gmail.com</span>
+          <FaEnvelope className="mr-2 hover:bg-[#0AFF9D]]" />
+          <span>
+            <a
+              href="mailto:monupanwar5655@gmail.com"
+              className="text-[#0AFF9D] underline"
+            >
+              monupanwar5655@gmail.com
+            </a>
+          </span>
         </div>
       </div>
     </section>

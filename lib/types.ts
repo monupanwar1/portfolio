@@ -1,6 +1,8 @@
 export type ProjectProps = {
   title: string;
   tech: string;
+  image:string;
+  url:string;
   description: string;
   linkedin: string;
   github: string;

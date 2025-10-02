@@ -55,14 +55,14 @@ export default function Navbar() {
       >
         <div className="flex items-center gap-4">
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/monu-panwar"
             target="_blank"
             className="text-white hover:text-[#0AFF9D] text-3xl"
           >
             <IoLogoLinkedin />
           </Link>
           <Link
-            href="https://github.com"
+            href="https://github.com/monupanwar1"
             target="_blank"
             className="text-white hover:text-[#0AFF9D] text-3xl"
           >

@@ -9,7 +9,7 @@ export default function HomePage() {
     >
       {/* DotPattern limited to Home */}
       <DotPattern
-        className="absolute top-0 left-0 w-full h-full -z-10"
+        className="absolute top-0 left-0 w-full h-full -z-10 backdrop-blur-md"
         width={20}
         height={20}
         glow={true}
@@ -23,7 +23,7 @@ export default function HomePage() {
         <span className="text-[#0AFF9D] font-bold">Frontend Developer</span>
       </h6>
       <p className="mt-4 w-full md:w-3/4 lg:w-1/2">
-        I&aposm a passionate Frontend Developer skilled in React, Next.js,
+        I&apos;m a passionate Frontend Developer skilled in React, Next.js,
         TypeScript, and Prisma. I’ve been actively building projects that focus
         on clean design, performance, and real-world problem solving.Excited to
         connect, learn, and grow with amazing teams and projects!

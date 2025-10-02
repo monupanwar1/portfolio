@@ -7,11 +7,11 @@ const workTools = [
   'Node.js',
   'Next.js',
   'GitHub',
-  'Jira',
+  'TypeScript',
   'Prisma',
   'Tailwind',
 ];
-const funTools = ['Shadcn', 'Figma', 'Firebase', 'PHP', 'Angular'];
+const funTools = ['Shadcn', 'Figma', 'magicui', ];
 
 export default function AboutSection() {
   return (
@@ -39,15 +39,15 @@ export default function AboutSection() {
             different frameworks.
           </p>
           <p>
-            I&apos;m actively looking for frontend developer roles where I
-            can apply my skills and grow faster 🚀
+            I&apos;m actively looking for frontend developer roles where I can
+            apply my skills and grow faster 🚀
           </p>
 
           <div className="flex items-center justify-center gap-4 mt-8 lg:mt-0">
             <h1 className="text-[#0AFF9D] mt-10">My Links →</h1>
             <div className="mt-8 flex gap-4">
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/monu-panwar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#EBECF3] hover:text-[#0AFF9D] transition"
@@ -55,7 +55,7 @@ export default function AboutSection() {
                 <IoLogoLinkedin className="text-3xl" />
               </a>
               <a
-                href="https://github.com/"
+                href="https://github.com/monupanwar1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#EBECF3] hover:text-[#0AFF9D] transition"
