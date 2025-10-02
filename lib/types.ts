@@ -1,12 +1,10 @@
-export type Project = {
-  id: string;
+export type ProjectProps = {
   title: string;
+  tech: string;
   description: string;
-  imageUrl: string;
-  repoLink: string;
-  techStack: string;
-  userId: string;
-  createdAt: Date | string;
+  linkedin: string;
+  github: string;
+  
 };
 
 export type User = {
@@ -21,7 +19,7 @@ export type User = {
   linkedin: string;
   resumeUrl: string;
   createdAt: Date | string;
-  projects: Project[];
+  projects: ProjectProps[];
 };
 
 export type UserProps = {

@@ -1,17 +1,17 @@
 "use client"
-import { ProjectData } from '@/Types/types';
 import Link from 'next/link';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import { motion } from 'framer-motion';
+import { ProjectProps } from '@/lib/types';
 
 // Data Array for Projects
-const projectData: ProjectData[] = [
+const projectData: ProjectProps[] = [
   {
     title: 'Paint APP',
     tech: 'Flutter - MUI - Python - FastAPI',
     description:
       'A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.',
-    linkedin: 'https://www.linkedin.com/',
+    linkedin: 'https://www.linkedin.com/monu-panwar',
     github: 'https://github.com/',
   },
   {
@@ -40,7 +40,7 @@ const projectData: ProjectData[] = [
   },
 ];
 
-const Cards = ({ title, tech, description, linkedin, github }:ProjectData) => {
+const Cards = ({ title, tech, description, linkedin, github }:ProjectProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: -100 }} // Slide in from left
