@@ -22,7 +22,7 @@ const projectData: ProjectProps[] = [
     tech: 'Next.js · Clerk Auth · TypeScript · NeonDB',
     description:
       'A pet care management app that helps users organize and manage their pets with ease.',
-    image: '/Pawsoft.png',
+    image: '/PawSoft.png',
     url: 'https://pawsoft.vercel.app/',
     linkedin: 'https://www.linkedin.com/in/monu-panwar',
     github: 'https://github.com/monupanwar1/pawsoft.git',
