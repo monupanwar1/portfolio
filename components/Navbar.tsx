@@ -70,13 +70,13 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <a
-          href="/resume.pdf"
-          target="_blank"
+        <Link
+          href="/MonuPanwarResume.pdf"
+          download
           className="border-2 border-[#0AFF9D] px-6 py-2 rounded-md text-[#0AFF9D] hover:bg-[#0AFF9D] hover:text-black transition duration-300"
         >
           My Resume
-        </a>
+        </Link>
       </motion.section>
     </>
   );

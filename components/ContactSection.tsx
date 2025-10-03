@@ -33,7 +33,7 @@ export default function ContactSection() {
               href="mailto:monupanwar5655@gmail.com"
               className="text-[#0AFF9D] underline"
             >
-              monupanwar5655@gmail.com
+              monupanwartech@gmail.com
             </a>
           </span>
         </div>
